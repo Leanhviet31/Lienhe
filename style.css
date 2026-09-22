@@ -667,7 +667,7 @@ img {
 
     .contact-hero::before {
         width: 100%;
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.50);
     }
 
     .contact-hero .hero-container {
@@ -700,7 +700,7 @@ img {
 
 @media (max-width: 480px) {
     .benefit-item {
-        flex: 0 0 100%;
+        flex: 0 0 45%;
     }
 
     .footer-col {
