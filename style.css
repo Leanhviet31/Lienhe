@@ -193,12 +193,15 @@ img {
 
 .hero-watermark {
     font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: #444;
     opacity: 0.8;
     transform: rotate(-10deg);
     text-align: center;
     line-height: 1.2;
+    position: absolute;
+    top: -30px;
+    right: -100px;
 }
 
 /* Contact Info Bar */
@@ -563,6 +566,7 @@ img {
     .info-bar-container {
         flex-wrap: wrap;
     }
+
     .info-item {
         flex: 0 0 45%;
         margin-bottom: 15px;
@@ -573,16 +577,20 @@ img {
     .main-container {
         flex-direction: column;
     }
+
     .contact-form-container {
         padding: 30px 20px;
     }
+
     .footer-top {
         flex-wrap: wrap;
     }
+
     .footer-col {
         flex: 0 0 45%;
         margin-bottom: 30px;
     }
+
     .brand-col {
         flex: 0 0 100%;
     }
@@ -599,9 +607,11 @@ img {
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 998;
     }
+
     .menu-overlay.active {
         display: block;
     }
+
     .nav-header {
         display: flex;
         justify-content: space-between;
@@ -609,12 +619,14 @@ img {
         padding: 15px 20px;
         border-bottom: 1px solid var(--border-color);
     }
+
     .close-menu-btn {
         background: none;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
     }
+
     .nav-menu {
         display: block;
         position: fixed;
@@ -629,49 +641,57 @@ img {
         transition: left 0.3s ease;
         overflow-y: auto;
     }
+
     .nav-menu.active {
         left: 0;
     }
+
     .nav-list {
         flex-direction: column;
         gap: 0;
     }
+
     .nav-list a {
         display: block;
         padding: 16px 24px;
         border-bottom: 1px solid var(--border-color);
     }
+
     .header-actions .btn-primary {
         display: none;
     }
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .contact-hero::before {
         width: 100%;
         background: rgba(255, 255, 255, 0.85);
     }
+
     .contact-hero .hero-container {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-watermark {
         display: none;
     }
-    
+
     .contact-form .form-row {
         flex-direction: column;
         gap: 0;
     }
-    
+
     .info-item {
         flex: 0 0 100%;
     }
-    
+
     .benefits-container {
         flex-wrap: wrap;
     }
+
     .benefit-item {
         flex: 0 0 45%;
         margin-bottom: 20px;
@@ -682,9 +702,11 @@ img {
     .benefit-item {
         flex: 0 0 100%;
     }
+
     .footer-col {
         flex: 0 0 100%;
     }
+
     .footer-bottom {
         flex-direction: column;
         gap: 15px;
