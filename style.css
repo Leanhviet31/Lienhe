@@ -404,37 +404,57 @@ img {
 }
 
 /* Benefits Section */
-.contact-benefits {
-    padding: 50px 0;
-    background-color: var(--bg-white);
-    border-bottom: 1px solid var(--border-color);
+.sidebar-benefits {
+    margin-top: 20px;
+    padding: 0;
+    border: none;
+    background: transparent;
 }
 
 .benefits-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
 }
 
 .benefit-item {
     flex: 1;
+    position: relative;
+    padding: 0 10px;
+}
+
+.benefit-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    background-color: var(--border-color);
 }
 
 .benefit-item .icon {
-    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     color: #333;
-    margin-bottom: 15px;
+    margin: 0 auto 10px auto;
 }
 
 .benefit-item h3 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
     color: #222;
 }
 
 .benefit-item p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: var(--text-light);
 }
 
@@ -695,6 +715,10 @@ img {
     .benefit-item {
         flex: 0 0 45%;
         margin-bottom: 20px;
+    }
+
+    .benefit-item:nth-child(even)::after {
+        display: none;
     }
 }
 
